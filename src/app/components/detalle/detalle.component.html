@@ -1,0 +1,16 @@
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <img src="{{ detalle.img }}" class="card-img-top" alt="{{ detalle.nombre }}">
+                <div class="card-body">
+                    <h1 class="card-title">{{ detalle.nombre }}</h1>
+                    <h4 class="card-title">{{ detalle.apellido }}</h4>
+                    <h4 class="card-title">{{ detalle.correo }}</h4>
+                    <p class="card-text">{{ detalle.bio }}</p>
+                    <a [routerLink]="[ '/usuarios' ]" class="btn btn-primary">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
